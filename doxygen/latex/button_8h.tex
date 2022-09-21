@@ -1,0 +1,95 @@
+\hypertarget{button_8h}{}\doxysection{ECUAL/\+Button/button.h File Reference}
+\label{button_8h}\index{ECUAL/Button/button.h@{ECUAL/Button/button.h}}
+
+
+API\textquotesingle{}s of Button Driver.  
+
+
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+DIO/dio.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{Indent}\textbf{ Button Port and Pin}\par
+{\em Definitions of the pin and port of the button. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{button_8h_ad3675f80a9964041e0105a768a3641e2}\label{button_8h_ad3675f80a9964041e0105a768a3641e2}} 
+\#define {\bfseries EXT\+\_\+\+INT\+\_\+\+BUTTON\+\_\+\+PORT}~PORT\+\_\+D
+\item 
+\mbox{\Hypertarget{button_8h_afdb428ba9ceb182dbc4396339905f984}\label{button_8h_afdb428ba9ceb182dbc4396339905f984}} 
+\#define {\bfseries EXT\+\_\+\+INT\+\_\+\+BUTTON\+\_\+\+PIN}~PIN2
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Button States}\par
+{\em Definitions of states of button 0 for low and 1 for high. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{button_8h_a34d508e1561ee5ff615033f90684be25}\label{button_8h_a34d508e1561ee5ff615033f90684be25}} 
+\#define {\bfseries BUTTON\+\_\+\+STATE\+\_\+\+LOW}~0
+\item 
+\mbox{\Hypertarget{button_8h_a7b3f8312fdb89f66423ba82d6fc89e07}\label{button_8h_a7b3f8312fdb89f66423ba82d6fc89e07}} 
+\#define {\bfseries BUTTON\+\_\+\+STATE\+\_\+\+HIGH}~1
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{button_8h_a1c5940eeed1f44b07fd5ddc897e6cd60}{BUTTON\+\_\+init}} (uint8\+\_\+t button\+Pin, uint8\+\_\+t button\+Port)
+\begin{DoxyCompactList}\small\item\em Initializes the direction of the button pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{button_8h_aaed11e1df1749f6319de39050e342ac6}{BUTTON\+\_\+read}} (uint8\+\_\+t button\+Pin, uint8\+\_\+t button\+Port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads the value of the button pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+API\textquotesingle{}s of Button Driver. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{button_8h_a1c5940eeed1f44b07fd5ddc897e6cd60}\label{button_8h_a1c5940eeed1f44b07fd5ddc897e6cd60}} 
+\index{button.h@{button.h}!BUTTON\_init@{BUTTON\_init}}
+\index{BUTTON\_init@{BUTTON\_init}!button.h@{button.h}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_init()}{BUTTON\_init()}}
+{\footnotesize\ttfamily void BUTTON\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{button\+Pin,  }\item[{uint8\+\_\+t}]{button\+Port }\end{DoxyParamCaption})}
+
+
+
+Initializes the direction of the button pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Pin} & The pin of the button \\
+\hline
+{\em button\+Port} & The port of the button pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_aaed11e1df1749f6319de39050e342ac6}\label{button_8h_aaed11e1df1749f6319de39050e342ac6}} 
+\index{button.h@{button.h}!BUTTON\_read@{BUTTON\_read}}
+\index{BUTTON\_read@{BUTTON\_read}!button.h@{button.h}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_read()}{BUTTON\_read()}}
+{\footnotesize\ttfamily void BUTTON\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{button\+Pin,  }\item[{uint8\+\_\+t}]{button\+Port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads the value of the button pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Pin} & The pin of the button \\
+\hline
+{\em button\+Port} & The port of the button pin \\
+\hline
+{\em value} & The value of the pin whether low or high \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

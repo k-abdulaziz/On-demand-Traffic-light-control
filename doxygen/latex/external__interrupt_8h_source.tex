@@ -1,0 +1,36 @@
+\hypertarget{external__interrupt_8h_source}{}\doxysection{external\+\_\+interrupt.\+h}
+\label{external__interrupt_8h_source}\index{MCAL/External Interrupt/external\_interrupt.h@{MCAL/External Interrupt/external\_interrupt.h}}
+\mbox{\hyperlink{external__interrupt_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef EXTERNAL\_INTERRUPT\_H\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define EXTERNAL\_INTERRUPT\_H\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../Utilities/registers.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{15 \textcolor{comment}{/*                        INTERRUPTS VECTORS                            */}}
+\DoxyCodeLine{16 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define EXT\_INT\_0 \_\_vector\_1}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define EXT\_INT\_1 \_\_vector\_2}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define EXT\_INT\_2 \_\_vector\_3}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define sei() \_\_asm\_\_ \_\_volatile\_\_ ("{}sei"{}} ::: "{}memory"{})}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define cli() \_\_asm\_\_ \_\_volatile\_\_ ("{}cli"{}} ::: "{}memory"{})}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{comment}{/* ISR definition */}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define ISR(INT\_VECT)void INT\_VECT(void) \_\_attribute\_\_ ((signal,used));\(\backslash\)}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{void INT\_VECT(void)}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{37 \textcolor{comment}{/*                         Interrupt Function                           */}}
+\DoxyCodeLine{38 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{external__interrupt_8h_a3dec38d0979b192185103ac2ac7e21a7}{Ext\_Interrupt\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* EXTERNAL\_INTERRUPT\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

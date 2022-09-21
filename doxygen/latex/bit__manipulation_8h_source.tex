@@ -1,0 +1,19 @@
+\hypertarget{bit__manipulation_8h_source}{}\doxysection{bit\+\_\+manipulation.\+h}
+\label{bit__manipulation_8h_source}\index{Utilities/bit\_manipulation.h@{Utilities/bit\_manipulation.h}}
+\mbox{\hyperlink{bit__manipulation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef BIT\_MANIPULATION\_H\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define BIT\_MANIPULATION\_H\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define SET\_BIT(BYTE, BIT\_NO)   (BYTE |= (1 << BIT\_NO))}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define CLEAR\_BIT(BYTE, BIT\_NO) (BYTE \&= (\string~(1 << BIT\_NO)))}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define TOGGLE\_BIT(BYTE,BIT\_NO) (BYTE \string^= (1 << BIT\_NO))}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define READ\_BIT(BYTE, BIT\_NO)  ((BYTE \& (1 << BIT\_NO)) >> BIT\_NO)}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* BIT\_MANIPULATION\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,100 @@
+\hypertarget{application_8h}{}\doxysection{Application/application.h File Reference}
+\label{application_8h}\index{Application/application.h@{Application/application.h}}
+
+
+API\textquotesingle{}s of Application Layer.  
+
+
+{\ttfamily \#include \char`\"{}../\+ECUAL/\+LED/led.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+ECUAL/\+Button/button.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+MCAL/\+Timer/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+MCAL/\+External Interrupt/external\+\_\+interrupt.\+h\char`\"{}}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073ab}{Traffic\+\_\+\+Light\+\_\+\+Mode}} \{ \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073aba0b486333530effd00e2ff55a7a6bb843}{Normal\+\_\+\+Mode}}
+, \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073abac760a273453067502a5824e4d0a1a826}{Pedestrian\+\_\+\+Mode}}
+ \}
+\item 
+enum \mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2}{Car\+\_\+\+LED\+\_\+\+State}} \{ \mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2ab5db0bf2f84c30f5ae96bf0cc73ce6a9}{CAR\+\_\+\+GREEN\+\_\+\+LED}}
+, \mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2afc1fe80ed097e23a8c813a7a3c289f1a}{CAR\+\_\+\+YELLOW\+\_\+\+LED}}
+, \mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2a0c292c76ea20cb356e1ee9884993ca72}{CAR\+\_\+\+RED\+\_\+\+LED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{application_8h_a72f08d66d0b37cf7c4d539fbc2e2ce10}\label{application_8h_a72f08d66d0b37cf7c4d539fbc2e2ce10}} 
+void {\bfseries APP\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8h_ad799d44ce2e9114c7f41fb0c2d08e72c}\label{application_8h_ad799d44ce2e9114c7f41fb0c2d08e72c}} 
+void {\bfseries APP\+\_\+start} (void)
+\begin{DoxyCompactList}\small\item\em Starts the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8h_a8980bf665404e6840c8b1edf6743602b}\label{application_8h_a8980bf665404e6840c8b1edf6743602b}} 
+void {\bfseries Traffic\+\_\+\+Light\+\_\+\+NM} (void)
+\begin{DoxyCompactList}\small\item\em Runs the Normal Mode of the Traffic Light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8h_a0705a8a5bada264cd95d47828138764a}\label{application_8h_a0705a8a5bada264cd95d47828138764a}} 
+void {\bfseries Traffic\+\_\+\+Light\+\_\+\+PRM} (void)
+\begin{DoxyCompactList}\small\item\em Runs the Pedestrian Red Mode of the Traffic Light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8h_a513de14a0c1fbdc87fd84a26eb0b177e}\label{application_8h_a513de14a0c1fbdc87fd84a26eb0b177e}} 
+void {\bfseries Traffic\+\_\+\+Light\+\_\+\+PGYM} (void)
+\begin{DoxyCompactList}\small\item\em Runs the Pedestrian Green Yellow Mode of the Traffic Light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8h_a3bc0350d2d7cc6d0bb930bf764a676d3}\label{application_8h_a3bc0350d2d7cc6d0bb930bf764a676d3}} 
+void {\bfseries Transition\+\_\+from\+\_\+\+PM\+\_\+to\+\_\+\+NM} (void)
+\begin{DoxyCompactList}\small\item\em Moves from Pedestrian Mode to Normal Mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+API\textquotesingle{}s of Application Layer. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2}\label{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2}} 
+\index{application.h@{application.h}!Car\_LED\_State@{Car\_LED\_State}}
+\index{Car\_LED\_State@{Car\_LED\_State}!application.h@{application.h}}
+\doxysubsubsection{\texorpdfstring{Car\_LED\_State}{Car\_LED\_State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2}{Car\+\_\+\+LED\+\_\+\+State}}}
+
+The enumeration of state of cars LED \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_GREEN\_LED@{CAR\_GREEN\_LED}!application.h@{application.h}}\index{application.h@{application.h}!CAR\_GREEN\_LED@{CAR\_GREEN\_LED}}}\mbox{\Hypertarget{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2ab5db0bf2f84c30f5ae96bf0cc73ce6a9}\label{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2ab5db0bf2f84c30f5ae96bf0cc73ce6a9}} 
+CAR\+\_\+\+GREEN\+\_\+\+LED&First State ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_YELLOW\_LED@{CAR\_YELLOW\_LED}!application.h@{application.h}}\index{application.h@{application.h}!CAR\_YELLOW\_LED@{CAR\_YELLOW\_LED}}}\mbox{\Hypertarget{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2afc1fe80ed097e23a8c813a7a3c289f1a}\label{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2afc1fe80ed097e23a8c813a7a3c289f1a}} 
+CAR\+\_\+\+YELLOW\+\_\+\+LED&Second State \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_RED\_LED@{CAR\_RED\_LED}!application.h@{application.h}}\index{application.h@{application.h}!CAR\_RED\_LED@{CAR\_RED\_LED}}}\mbox{\Hypertarget{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2a0c292c76ea20cb356e1ee9884993ca72}\label{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2a0c292c76ea20cb356e1ee9884993ca72}} 
+CAR\+\_\+\+RED\+\_\+\+LED&Third state ~\newline
+ \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{application_8h_a8969d304badfe0d96cfc6e5e831073ab}\label{application_8h_a8969d304badfe0d96cfc6e5e831073ab}} 
+\index{application.h@{application.h}!Traffic\_Light\_Mode@{Traffic\_Light\_Mode}}
+\index{Traffic\_Light\_Mode@{Traffic\_Light\_Mode}!application.h@{application.h}}
+\doxysubsubsection{\texorpdfstring{Traffic\_Light\_Mode}{Traffic\_Light\_Mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073ab}{Traffic\+\_\+\+Light\+\_\+\+Mode}}}
+
+The enumeration of Traffic Light Mode \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal\_Mode@{Normal\_Mode}!application.h@{application.h}}\index{application.h@{application.h}!Normal\_Mode@{Normal\_Mode}}}\mbox{\Hypertarget{application_8h_a8969d304badfe0d96cfc6e5e831073aba0b486333530effd00e2ff55a7a6bb843}\label{application_8h_a8969d304badfe0d96cfc6e5e831073aba0b486333530effd00e2ff55a7a6bb843}} 
+Normal\+\_\+\+Mode&First Mode ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pedestrian\_Mode@{Pedestrian\_Mode}!application.h@{application.h}}\index{application.h@{application.h}!Pedestrian\_Mode@{Pedestrian\_Mode}}}\mbox{\Hypertarget{application_8h_a8969d304badfe0d96cfc6e5e831073abac760a273453067502a5824e4d0a1a826}\label{application_8h_a8969d304badfe0d96cfc6e5e831073abac760a273453067502a5824e4d0a1a826}} 
+Pedestrian\+\_\+\+Mode&Second Mode \\
+\hline
+
+\end{DoxyEnumFields}

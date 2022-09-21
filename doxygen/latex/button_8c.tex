@@ -1,0 +1,74 @@
+\hypertarget{button_8c}{}\doxysection{ECUAL/\+Button/button.c File Reference}
+\label{button_8c}\index{ECUAL/Button/button.c@{ECUAL/Button/button.c}}
+
+
+Implementation of Button Driver.  
+
+
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{button_8c_a1c5940eeed1f44b07fd5ddc897e6cd60}{BUTTON\+\_\+init}} (uint8\+\_\+t button\+Pin, uint8\+\_\+t button\+Port)
+\begin{DoxyCompactList}\small\item\em Initializes the direction of the button pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{button_8c_aaed11e1df1749f6319de39050e342ac6}{BUTTON\+\_\+read}} (uint8\+\_\+t button\+Pin, uint8\+\_\+t button\+Port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads the value of the button pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of Button Driver. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{button_8c_a1c5940eeed1f44b07fd5ddc897e6cd60}\label{button_8c_a1c5940eeed1f44b07fd5ddc897e6cd60}} 
+\index{button.c@{button.c}!BUTTON\_init@{BUTTON\_init}}
+\index{BUTTON\_init@{BUTTON\_init}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_init()}{BUTTON\_init()}}
+{\footnotesize\ttfamily void BUTTON\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{button\+Pin,  }\item[{uint8\+\_\+t}]{button\+Port }\end{DoxyParamCaption})}
+
+
+
+Initializes the direction of the button pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Pin} & The pin of the button \\
+\hline
+{\em button\+Port} & The port of the button pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8c_aaed11e1df1749f6319de39050e342ac6}\label{button_8c_aaed11e1df1749f6319de39050e342ac6}} 
+\index{button.c@{button.c}!BUTTON\_read@{BUTTON\_read}}
+\index{BUTTON\_read@{BUTTON\_read}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_read()}{BUTTON\_read()}}
+{\footnotesize\ttfamily void BUTTON\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{button\+Pin,  }\item[{uint8\+\_\+t}]{button\+Port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads the value of the button pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Pin} & The pin of the button \\
+\hline
+{\em button\+Port} & The port of the button pin \\
+\hline
+{\em value} & The value of the pin whether low or high \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

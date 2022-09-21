@@ -1,0 +1,77 @@
+\hypertarget{application_8c}{}\doxysection{Application/application.c File Reference}
+\label{application_8c}\index{Application/application.c@{Application/application.c}}
+
+
+Implementation of Apllication Layer.  
+
+
+{\ttfamily \#include \char`\"{}application.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{application_8c_a72f08d66d0b37cf7c4d539fbc2e2ce10}\label{application_8c_a72f08d66d0b37cf7c4d539fbc2e2ce10}} 
+void {\bfseries APP\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8c_ad799d44ce2e9114c7f41fb0c2d08e72c}\label{application_8c_ad799d44ce2e9114c7f41fb0c2d08e72c}} 
+void {\bfseries APP\+\_\+start} (void)
+\begin{DoxyCompactList}\small\item\em Starts the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8c_a8980bf665404e6840c8b1edf6743602b}\label{application_8c_a8980bf665404e6840c8b1edf6743602b}} 
+void {\bfseries Traffic\+\_\+\+Light\+\_\+\+NM} (void)
+\begin{DoxyCompactList}\small\item\em Runs the Normal Mode of the Traffic Light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8c_a0705a8a5bada264cd95d47828138764a}\label{application_8c_a0705a8a5bada264cd95d47828138764a}} 
+void {\bfseries Traffic\+\_\+\+Light\+\_\+\+PRM} (void)
+\begin{DoxyCompactList}\small\item\em Runs the Pedestrian Red Mode of the Traffic Light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8c_a513de14a0c1fbdc87fd84a26eb0b177e}\label{application_8c_a513de14a0c1fbdc87fd84a26eb0b177e}} 
+void {\bfseries Traffic\+\_\+\+Light\+\_\+\+PGYM} (void)
+\begin{DoxyCompactList}\small\item\em Runs the Pedestrian Green Yellow Mode of the Traffic Light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8c_a3bc0350d2d7cc6d0bb930bf764a676d3}\label{application_8c_a3bc0350d2d7cc6d0bb930bf764a676d3}} 
+void {\bfseries Transition\+\_\+from\+\_\+\+PM\+\_\+to\+\_\+\+NM} (void)
+\begin{DoxyCompactList}\small\item\em Moves from Pedestrian Mode to Normal Mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{application_8c_a8ee0ec9bf2e87b8e9546900a0086c7ee}\label{application_8c_a8ee0ec9bf2e87b8e9546900a0086c7ee}} 
+{\bfseries ISR} (\mbox{\hyperlink{external__interrupt_8h_adf5dd6733f063b4848755903a3c27ab7}{EXT\+\_\+\+INT\+\_\+0}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{application_8c_af27e3188294c2df66d975b74a09c001d}{i}}
+\item 
+\mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073ab}{Traffic\+\_\+\+Light\+\_\+\+Mode}} \mbox{\hyperlink{application_8c_a92cd64fab68dbdb6b055f75851b61b72}{TL\+\_\+\+Current\+\_\+\+Mode}} = \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073aba0b486333530effd00e2ff55a7a6bb843}{Normal\+\_\+\+Mode}}
+\item 
+\mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2}{Car\+\_\+\+LED\+\_\+\+State}} \mbox{\hyperlink{application_8c_a61e9d8049772be0284248cc88a197e88}{Car\+\_\+\+Current\+\_\+\+LED}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of Apllication Layer. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{application_8c_a61e9d8049772be0284248cc88a197e88}\label{application_8c_a61e9d8049772be0284248cc88a197e88}} 
+\index{application.c@{application.c}!Car\_Current\_LED@{Car\_Current\_LED}}
+\index{Car\_Current\_LED@{Car\_Current\_LED}!application.c@{application.c}}
+\doxysubsubsection{\texorpdfstring{Car\_Current\_LED}{Car\_Current\_LED}}
+{\footnotesize\ttfamily \mbox{\hyperlink{application_8h_a6cc3742cffae7c6ca3b7527fc95d3ce2}{Car\+\_\+\+LED\+\_\+\+State}} Car\+\_\+\+Current\+\_\+\+LED}
+
+Declaration of Current Led state of Car \mbox{\Hypertarget{application_8c_af27e3188294c2df66d975b74a09c001d}\label{application_8c_af27e3188294c2df66d975b74a09c001d}} 
+\index{application.c@{application.c}!i@{i}}
+\index{i@{i}!application.c@{application.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily uint8\+\_\+t i}
+
+Declaration of counter variable \mbox{\Hypertarget{application_8c_a92cd64fab68dbdb6b055f75851b61b72}\label{application_8c_a92cd64fab68dbdb6b055f75851b61b72}} 
+\index{application.c@{application.c}!TL\_Current\_Mode@{TL\_Current\_Mode}}
+\index{TL\_Current\_Mode@{TL\_Current\_Mode}!application.c@{application.c}}
+\doxysubsubsection{\texorpdfstring{TL\_Current\_Mode}{TL\_Current\_Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073ab}{Traffic\+\_\+\+Light\+\_\+\+Mode}} TL\+\_\+\+Current\+\_\+\+Mode = \mbox{\hyperlink{application_8h_a8969d304badfe0d96cfc6e5e831073aba0b486333530effd00e2ff55a7a6bb843}{Normal\+\_\+\+Mode}}}
+
+Initialization of Normal Mode as default Traffic Light Mode 

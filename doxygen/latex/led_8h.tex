@@ -1,0 +1,169 @@
+\hypertarget{led_8h}{}\doxysection{ECUAL/\+LED/led.h File Reference}
+\label{led_8h}\index{ECUAL/LED/led.h@{ECUAL/LED/led.h}}
+
+
+API\textquotesingle{}s of LED Driver.  
+
+
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+DIO/dio.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{Indent}\textbf{ Cars LEDs}\par
+{\em Definitions of pins and it ports for LEDs. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{led_8h_ae9d1e178f46e43cce4863b8a554c2193}\label{led_8h_ae9d1e178f46e43cce4863b8a554c2193}} 
+\#define {\bfseries CARS\+\_\+\+GREEN\+\_\+\+LED\+\_\+\+PORT}~PORT\+\_\+A
+\item 
+\mbox{\Hypertarget{led_8h_ab561e9db4c7c261c522624bc676b7de5}\label{led_8h_ab561e9db4c7c261c522624bc676b7de5}} 
+\#define {\bfseries CARS\+\_\+\+GREEN\+\_\+\+LED\+\_\+\+PIN}~PIN0
+\item 
+\mbox{\Hypertarget{led_8h_a5fd7ba7091052c9a6da4183d7019510f}\label{led_8h_a5fd7ba7091052c9a6da4183d7019510f}} 
+\#define {\bfseries CARS\+\_\+\+YELLOW\+\_\+\+LED\+\_\+\+PORT}~PORT\+\_\+A
+\item 
+\mbox{\Hypertarget{led_8h_a63c6549ca61981d4dfafcf9e491e4d7d}\label{led_8h_a63c6549ca61981d4dfafcf9e491e4d7d}} 
+\#define {\bfseries CARS\+\_\+\+YELLOW\+\_\+\+LED\+\_\+\+PIN}~PIN1
+\item 
+\mbox{\Hypertarget{led_8h_a4d5855ee560301e64651d5cb3e2eada1}\label{led_8h_a4d5855ee560301e64651d5cb3e2eada1}} 
+\#define {\bfseries CARS\+\_\+\+RED\+\_\+\+LED\+\_\+\+PORT}~PORT\+\_\+A
+\item 
+\mbox{\Hypertarget{led_8h_a6f9ef461414643ff05dc0a634c0f86d2}\label{led_8h_a6f9ef461414643ff05dc0a634c0f86d2}} 
+\#define {\bfseries CARS\+\_\+\+RED\+\_\+\+LED\+\_\+\+PIN}~PIN2
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Pedestrians LEDs}\par
+{\em Definitions of pins and it ports for LEDs. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{led_8h_a06be7c8a31a280b2b3e0e7581bb83293}\label{led_8h_a06be7c8a31a280b2b3e0e7581bb83293}} 
+\#define {\bfseries PEDS\+\_\+\+GREEN\+\_\+\+LED\+\_\+\+PORT}~PORT\+\_\+B
+\item 
+\mbox{\Hypertarget{led_8h_ab6201f61df41cd588cb8ffeaac249003}\label{led_8h_ab6201f61df41cd588cb8ffeaac249003}} 
+\#define {\bfseries PEDS\+\_\+\+GREEN\+\_\+\+LED\+\_\+\+PIN}~PIN0
+\item 
+\mbox{\Hypertarget{led_8h_a687ea08d91abea7176ef35abc62d2410}\label{led_8h_a687ea08d91abea7176ef35abc62d2410}} 
+\#define {\bfseries PEDS\+\_\+\+YELLOW\+\_\+\+LED\+\_\+\+PORT}~PORT\+\_\+B
+\item 
+\mbox{\Hypertarget{led_8h_a4ce778c7c1b5fa462b4740dd26e0f98d}\label{led_8h_a4ce778c7c1b5fa462b4740dd26e0f98d}} 
+\#define {\bfseries PEDS\+\_\+\+YELLOW\+\_\+\+LED\+\_\+\+PIN}~PIN1
+\item 
+\mbox{\Hypertarget{led_8h_a2eac4983b2917a2f3a101e8e11b8aaf0}\label{led_8h_a2eac4983b2917a2f3a101e8e11b8aaf0}} 
+\#define {\bfseries PEDS\+\_\+\+RED\+\_\+\+LED\+\_\+\+PORT}~PORT\+\_\+B
+\item 
+\mbox{\Hypertarget{led_8h_a70d388c63a162dad3930c2c3f1451919}\label{led_8h_a70d388c63a162dad3930c2c3f1451919}} 
+\#define {\bfseries PEDS\+\_\+\+RED\+\_\+\+LED\+\_\+\+PIN}~PIN2
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{led_8h_ac57fe045f71a6269fd528c584f584d9b}{LED\+\_\+init}} (uint8\+\_\+t led\+Pin, uint8\+\_\+t led\+Port)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8h_a9504c019e0420fe57f167286a6eb8a95}{LED\+\_\+on}} (uint8\+\_\+t led\+Pin, uint8\+\_\+t led\+Port)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8h_a8603cfb91c75b2d863c8ece3cc26197e}{LED\+\_\+off}} (uint8\+\_\+t led\+Pin, uint8\+\_\+t led\+Port)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8h_a0925fe44dc013bf140a8e01edd850d81}{LED\+\_\+toggle}} (uint8\+\_\+t led\+Pin, uint8\+\_\+t led\+Port)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+API\textquotesingle{}s of LED Driver. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{led_8h_ac57fe045f71a6269fd528c584f584d9b}\label{led_8h_ac57fe045f71a6269fd528c584f584d9b}} 
+\index{led.h@{led.h}!LED\_init@{LED\_init}}
+\index{LED\_init@{LED\_init}!led.h@{led.h}}
+\doxysubsubsection{\texorpdfstring{LED\_init()}{LED\_init()}}
+{\footnotesize\ttfamily void LED\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led\+Pin,  }\item[{uint8\+\_\+t}]{led\+Port }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+Pin} & \\
+\hline
+{\em led\+Port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{led_8h_a8603cfb91c75b2d863c8ece3cc26197e}\label{led_8h_a8603cfb91c75b2d863c8ece3cc26197e}} 
+\index{led.h@{led.h}!LED\_off@{LED\_off}}
+\index{LED\_off@{LED\_off}!led.h@{led.h}}
+\doxysubsubsection{\texorpdfstring{LED\_off()}{LED\_off()}}
+{\footnotesize\ttfamily void LED\+\_\+off (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led\+Pin,  }\item[{uint8\+\_\+t}]{led\+Port }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+Pin} & \\
+\hline
+{\em led\+Port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{led_8h_a9504c019e0420fe57f167286a6eb8a95}\label{led_8h_a9504c019e0420fe57f167286a6eb8a95}} 
+\index{led.h@{led.h}!LED\_on@{LED\_on}}
+\index{LED\_on@{LED\_on}!led.h@{led.h}}
+\doxysubsubsection{\texorpdfstring{LED\_on()}{LED\_on()}}
+{\footnotesize\ttfamily void LED\+\_\+on (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led\+Pin,  }\item[{uint8\+\_\+t}]{led\+Port }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+Pin} & \\
+\hline
+{\em led\+Port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{led_8h_a0925fe44dc013bf140a8e01edd850d81}\label{led_8h_a0925fe44dc013bf140a8e01edd850d81}} 
+\index{led.h@{led.h}!LED\_toggle@{LED\_toggle}}
+\index{LED\_toggle@{LED\_toggle}!led.h@{led.h}}
+\doxysubsubsection{\texorpdfstring{LED\_toggle()}{LED\_toggle()}}
+{\footnotesize\ttfamily void LED\+\_\+toggle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led\+Pin,  }\item[{uint8\+\_\+t}]{led\+Port }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+Pin} & \\
+\hline
+{\em led\+Port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

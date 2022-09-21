@@ -1,0 +1,78 @@
+\hypertarget{timer_8c}{}\doxysection{MCAL/\+Timer/timer.c File Reference}
+\label{timer_8c}\index{MCAL/Timer/timer.c@{MCAL/Timer/timer.c}}
+
+
+Timer Driver implementation.  
+
+
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{timer_8c_aa94313b5d741dbccb192d9960411dfe8}{TIMER0\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer_8c_ad26ddf94f57b0c5581d8d41b279417d3}{TIMER0\+\_\+delay}} (uint32\+\_\+t delay\+\_\+time\+\_\+ms)
+\begin{DoxyCompactList}\small\item\em Generates a delay in milliseconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer_8c_a1ddf6a77f5f7cb8b8aaea983b2d5c87f}{TIMER0\+\_\+stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timer Driver implementation. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{timer_8c_ad26ddf94f57b0c5581d8d41b279417d3}\label{timer_8c_ad26ddf94f57b0c5581d8d41b279417d3}} 
+\index{timer.c@{timer.c}!TIMER0\_delay@{TIMER0\_delay}}
+\index{TIMER0\_delay@{TIMER0\_delay}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{TIMER0\_delay()}{TIMER0\_delay()}}
+{\footnotesize\ttfamily void TIMER0\+\_\+delay (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{delay\+\_\+time\+\_\+ms }\end{DoxyParamCaption})}
+
+
+
+Generates a delay in milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay\+\_\+time\+\_\+ms} & the time of delay \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{timer_8c_aa94313b5d741dbccb192d9960411dfe8}\label{timer_8c_aa94313b5d741dbccb192d9960411dfe8}} 
+\index{timer.c@{timer.c}!TIMER0\_init@{TIMER0\_init}}
+\index{TIMER0\_init@{TIMER0\_init}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{TIMER0\_init()}{TIMER0\_init()}}
+{\footnotesize\ttfamily void TIMER0\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the timer. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{timer_8c_a1ddf6a77f5f7cb8b8aaea983b2d5c87f}\label{timer_8c_a1ddf6a77f5f7cb8b8aaea983b2d5c87f}} 
+\index{timer.c@{timer.c}!TIMER0\_stop@{TIMER0\_stop}}
+\index{TIMER0\_stop@{TIMER0\_stop}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{TIMER0\_stop()}{TIMER0\_stop()}}
+{\footnotesize\ttfamily void TIMER0\+\_\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the timer. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

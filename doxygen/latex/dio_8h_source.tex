@@ -1,0 +1,43 @@
+\hypertarget{dio_8h_source}{}\doxysection{dio.\+h}
+\label{dio_8h_source}\index{MCAL/DIO/dio.h@{MCAL/DIO/dio.h}}
+\mbox{\hyperlink{dio_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef DIO\_H\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define DIO\_H\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../Utilities/registers.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../../Utilities/bit\_manipulation.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define PIN0 0}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define PIN1 1}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define PIN2 2}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define PIN3 3}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define PIN4 4}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define PIN5 5}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define PIN6 6}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define PIN7 7}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define PORT\_A 'A'}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define PORT\_B 'B'}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define PORT\_C 'C'}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define PORT\_D 'D'}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define IN 0}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define OUT 1}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define LOW 0}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define HIGH 1}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{63 \textcolor{keywordtype}{void} \mbox{\hyperlink{dio_8h_a2b95ae1ac8b1424a5b3965e67cb65acf}{DIO\_init}}(uint8\_t pinNumber, uint8\_t portNumber, uint8\_t direction);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{72 \textcolor{keywordtype}{void} \mbox{\hyperlink{dio_8h_a11718630dcfe7aa5bcf8e79b2293845f}{DIO\_write}}(uint8\_t pinNumber, uint8\_t portNumber, uint8\_t value);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{80 \textcolor{keywordtype}{void} \mbox{\hyperlink{dio_8h_a06934aa364ae60897e3035218b6fb637}{DIO\_toggle}}(uint8\_t pinNumber, uint8\_t portNumber);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{89 \textcolor{keywordtype}{void} \mbox{\hyperlink{dio_8h_a69bf59de166e0c8ca6349e75f75efb08}{DIO\_read}}(uint8\_t pinNumber, uint8\_t portNumber, uint8\_t *value);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* DIO\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

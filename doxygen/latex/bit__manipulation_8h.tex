@@ -1,0 +1,60 @@
+\hypertarget{bit__manipulation_8h}{}\doxysection{Utilities/bit\+\_\+manipulation.h File Reference}
+\label{bit__manipulation_8h}\index{Utilities/bit\_manipulation.h@{Utilities/bit\_manipulation.h}}
+
+
+Macros defines of bit manipulation.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{bit__manipulation_8h_a869377246aa1736fc00bddc99f88242c}{SET\+\_\+\+BIT}}(BYTE,  BIT\+\_\+\+NO)~(BYTE $\vert$= (1 $<$$<$ BIT\+\_\+\+NO))
+\item 
+\#define \mbox{\hyperlink{bit__manipulation_8h_af9d975d45337d47ebdf867e5636f93eb}{CLEAR\+\_\+\+BIT}}(BYTE,  BIT\+\_\+\+NO)~(BYTE \&= ($\sim$(1 $<$$<$ BIT\+\_\+\+NO)))
+\item 
+\#define \mbox{\hyperlink{bit__manipulation_8h_abdb901fe07fefb665633b3e3fe91d521}{TOGGLE\+\_\+\+BIT}}(BYTE,  BIT\+\_\+\+NO)~(BYTE $^\wedge$= (1 $<$$<$ BIT\+\_\+\+NO))
+\item 
+\#define \mbox{\hyperlink{bit__manipulation_8h_a7d6b40ec22095733934e39871f1ea96b}{READ\+\_\+\+BIT}}(BYTE,  BIT\+\_\+\+NO)~((BYTE \& (1 $<$$<$ BIT\+\_\+\+NO)) $>$$>$ BIT\+\_\+\+NO)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Macros defines of bit manipulation. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{bit__manipulation_8h_af9d975d45337d47ebdf867e5636f93eb}\label{bit__manipulation_8h_af9d975d45337d47ebdf867e5636f93eb}} 
+\index{bit\_manipulation.h@{bit\_manipulation.h}!CLEAR\_BIT@{CLEAR\_BIT}}
+\index{CLEAR\_BIT@{CLEAR\_BIT}!bit\_manipulation.h@{bit\_manipulation.h}}
+\doxysubsubsection{\texorpdfstring{CLEAR\_BIT}{CLEAR\_BIT}}
+{\footnotesize\ttfamily \#define CLEAR\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{BYTE,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~(BYTE \&= ($\sim$(1 $<$$<$ BIT\+\_\+\+NO)))}
+
+Clears the BIT\+\_\+\+NO of BYTE \mbox{\Hypertarget{bit__manipulation_8h_a7d6b40ec22095733934e39871f1ea96b}\label{bit__manipulation_8h_a7d6b40ec22095733934e39871f1ea96b}} 
+\index{bit\_manipulation.h@{bit\_manipulation.h}!READ\_BIT@{READ\_BIT}}
+\index{READ\_BIT@{READ\_BIT}!bit\_manipulation.h@{bit\_manipulation.h}}
+\doxysubsubsection{\texorpdfstring{READ\_BIT}{READ\_BIT}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{BYTE,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~((BYTE \& (1 $<$$<$ BIT\+\_\+\+NO)) $>$$>$ BIT\+\_\+\+NO)}
+
+Reads the BIT\+\_\+\+NO of BYTE \mbox{\Hypertarget{bit__manipulation_8h_a869377246aa1736fc00bddc99f88242c}\label{bit__manipulation_8h_a869377246aa1736fc00bddc99f88242c}} 
+\index{bit\_manipulation.h@{bit\_manipulation.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!bit\_manipulation.h@{bit\_manipulation.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{BYTE,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~(BYTE $\vert$= (1 $<$$<$ BIT\+\_\+\+NO))}
+
+Sets the BIT\+\_\+\+NO of BYTE \mbox{\Hypertarget{bit__manipulation_8h_abdb901fe07fefb665633b3e3fe91d521}\label{bit__manipulation_8h_abdb901fe07fefb665633b3e3fe91d521}} 
+\index{bit\_manipulation.h@{bit\_manipulation.h}!TOGGLE\_BIT@{TOGGLE\_BIT}}
+\index{TOGGLE\_BIT@{TOGGLE\_BIT}!bit\_manipulation.h@{bit\_manipulation.h}}
+\doxysubsubsection{\texorpdfstring{TOGGLE\_BIT}{TOGGLE\_BIT}}
+{\footnotesize\ttfamily \#define TOGGLE\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{BYTE,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~(BYTE $^\wedge$= (1 $<$$<$ BIT\+\_\+\+NO))}
+
+Toggles the BIT\+\_\+\+NO of BYTE 

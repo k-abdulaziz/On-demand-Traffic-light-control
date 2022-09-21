@@ -1,0 +1,55 @@
+\hypertarget{registers_8h_source}{}\doxysection{registers.\+h}
+\label{registers_8h_source}\index{Utilities/registers.h@{Utilities/registers.h}}
+\mbox{\hyperlink{registers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef REGISTERS\_H\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define REGISTERS\_H\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{15 \textcolor{comment}{/*                            DIO REGISTERS                             */}}
+\DoxyCodeLine{16 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{17 \textcolor{comment}{/* <Registers of PORT A */}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define PORTA *((volatile uint8\_t *)0x3B) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define DDRA  *((volatile uint8\_t *)0x3A) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define PINA  *((volatile uint8\_t *)0x39) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{comment}{/* Registers of PORT B */}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define PORTB *((volatile uint8\_t *)0x38) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define DDRB  *((volatile uint8\_t *)0x37) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define PINB  *((volatile uint8\_t *)0x36) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{comment}{/* Registers of PORT C */}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define PORTC *((volatile uint8\_t *)0x35) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define DDRC  *((volatile uint8\_t *)0x34) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define PINC  *((volatile uint8\_t *)0x33) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{comment}{/* Registers of PORT D */}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define PORTD *((volatile uint8\_t *)0x32) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define DDRD  *((volatile uint8\_t *)0x31) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define PIND  *((volatile uint8\_t *)0x30) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{38 \textcolor{comment}{/*                      Timer/Counter0 Registers                        */}}
+\DoxyCodeLine{39 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define TCCR0 *((volatile uint8\_t *)0x53) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define TCNT0 *((volatile uint8\_t *)0x52) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define TIFR  *((volatile uint8\_t *)0x58) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define OCR0  *((volatile uint8\_t *)0x5C) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define TIMSK *((volatile uint8\_t *)0x59) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{48 \textcolor{comment}{/*                    External Interrupts Registers                     */}}
+\DoxyCodeLine{49 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define MCUCR  *((volatile uint8\_t *)0x55) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define MCUCSR *((volatile uint8\_t *)0x54) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define GICR   *((volatile uint8\_t *)0x5B) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define GIFR   *((volatile uint8\_t *)0x5A) }\textcolor{comment}{/* 8-\/bit register */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* REGISTERS\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

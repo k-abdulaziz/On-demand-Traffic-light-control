@@ -1,0 +1,122 @@
+\hypertarget{dio_8c}{}\doxysection{MCAL/\+DIO/dio.c File Reference}
+\label{dio_8c}\index{MCAL/DIO/dio.c@{MCAL/DIO/dio.c}}
+
+
+Implementation of DIO Driver.  
+
+
+{\ttfamily \#include \char`\"{}dio.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dio_8c_a2b95ae1ac8b1424a5b3965e67cb65acf}{DIO\+\_\+init}} (uint8\+\_\+t pin\+Number, uint8\+\_\+t port\+Number, uint8\+\_\+t direction)
+\begin{DoxyCompactList}\small\item\em Initializes the direction of the pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dio_8c_a11718630dcfe7aa5bcf8e79b2293845f}{DIO\+\_\+write}} (uint8\+\_\+t pin\+Number, uint8\+\_\+t port\+Number, uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Writes a value to the pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dio_8c_a06934aa364ae60897e3035218b6fb637}{DIO\+\_\+toggle}} (uint8\+\_\+t pin\+Number, uint8\+\_\+t port\+Number)
+\begin{DoxyCompactList}\small\item\em Toggles the pin value if 1 or 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dio_8c_a69bf59de166e0c8ca6349e75f75efb08}{DIO\+\_\+read}} (uint8\+\_\+t pin\+Number, uint8\+\_\+t port\+Number, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads the value in the pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of DIO Driver. 
+
+\begin{DoxyAuthor}{Author}
+Khaled Abdulaziz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+00 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14/9/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dio_8c_a2b95ae1ac8b1424a5b3965e67cb65acf}\label{dio_8c_a2b95ae1ac8b1424a5b3965e67cb65acf}} 
+\index{dio.c@{dio.c}!DIO\_init@{DIO\_init}}
+\index{DIO\_init@{DIO\_init}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_init()}{DIO\_init()}}
+{\footnotesize\ttfamily void DIO\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+Number,  }\item[{uint8\+\_\+t}]{port\+Number,  }\item[{uint8\+\_\+t}]{direction }\end{DoxyParamCaption})}
+
+
+
+Initializes the direction of the pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & The number of pin \\
+\hline
+{\em port\+Number} & The number of port \\
+\hline
+{\em direction} & The direction of the pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dio_8c_a69bf59de166e0c8ca6349e75f75efb08}\label{dio_8c_a69bf59de166e0c8ca6349e75f75efb08}} 
+\index{dio.c@{dio.c}!DIO\_read@{DIO\_read}}
+\index{DIO\_read@{DIO\_read}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_read()}{DIO\_read()}}
+{\footnotesize\ttfamily void DIO\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+Number,  }\item[{uint8\+\_\+t}]{port\+Number,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads the value in the pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & The number of pin \\
+\hline
+{\em port\+Number} & The number of port \\
+\hline
+{\em value} & Returns the value as a pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dio_8c_a06934aa364ae60897e3035218b6fb637}\label{dio_8c_a06934aa364ae60897e3035218b6fb637}} 
+\index{dio.c@{dio.c}!DIO\_toggle@{DIO\_toggle}}
+\index{DIO\_toggle@{DIO\_toggle}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_toggle()}{DIO\_toggle()}}
+{\footnotesize\ttfamily void DIO\+\_\+toggle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+Number,  }\item[{uint8\+\_\+t}]{port\+Number }\end{DoxyParamCaption})}
+
+
+
+Toggles the pin value if 1 or 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & The number of pin \\
+\hline
+{\em port\+Number} & The number of port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dio_8c_a11718630dcfe7aa5bcf8e79b2293845f}\label{dio_8c_a11718630dcfe7aa5bcf8e79b2293845f}} 
+\index{dio.c@{dio.c}!DIO\_write@{DIO\_write}}
+\index{DIO\_write@{DIO\_write}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_write()}{DIO\_write()}}
+{\footnotesize\ttfamily void DIO\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+Number,  }\item[{uint8\+\_\+t}]{port\+Number,  }\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a value to the pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & The number of pin \\
+\hline
+{\em port\+Number} & The number of port \\
+\hline
+{\em value} & The value to write to the pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
